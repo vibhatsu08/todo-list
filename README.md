@@ -1,2 +1,5 @@
 # todo-list
-This repository is for the Todo list project made in HTML, CSS and Javascript.
+View the project <a href="">here</a> <br/>
+Title - Todo List
+ProjectLog[0] - Setting up the basic boilerplate for the project. <br/>
+
