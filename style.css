@@ -12,6 +12,24 @@ body {
 :root {
     --headerBgColor: #1E1B18;
     --headerColor: #FFFAFF;
+    --containerContentBgColor: #FFFAFF;
+    --addTaskContainerBgColor: #FFF8F0;
+    --addTaskContainerBorderColor: #2F2F2F;
+    --inputTaskBgColor: #2F2F2F;
+    --inputTypeColor: #FFFAFF;
+    --addTaskButtonBgColor: #F64740;
+    --addTaskButtonColor: #FFFAFF;
+    --tasksContainerBgColor: #FFF8F0;
+    --tasksContainerBorderColor: #2F2F2F;
+    --taskBackgroundColor: #2F2F2F;
+    --taskColor: #FFFAFF;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -24,4 +42,67 @@ header {
     position: sticky;
     top: 0;
     padding: 20px 40px;
+    width: 100vw;
+}
+
+#container-content {
+    background-color: var(--containerContentBgColor);
+}
+
+#add_task_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1vw;
+    background-color: var(--addTaskContainerBgColor);
+    border: 2px solid var(--addTaskContainerBorderColor);
+    width: 50vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+#add_task_container > #input_task {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--inputTaskBgColor);
+    color: var(--inputTypeColor);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    width: 100vw;
+}
+#add_task_container > #input_task::placeholder {
+    text-transform: capitalize;
+}
+#add_task_container > #add_button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--addTaskButtonBgColor);
+    color: var(--addTaskButtonColor);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#tasks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--tasksContainerBgColor);
+    border: 2px solid var(--tasksContainerBorderColor);
+    padding: 20px;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+
+.task {
+    background-color: var(--taskBackgroundColor);
+    color: var(--taskColor);
 }
