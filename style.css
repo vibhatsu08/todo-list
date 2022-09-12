@@ -3,26 +3,35 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    --headerBgColor: #1E1B18;
-    --headerColor: #FFFAFF;
-    --containerContentBgColor: #FFFAFF;
-    --addTaskContainerBgColor: #FFF8F0;
-    --addTaskContainerBorderColor: #2F2F2F;
-    --inputTaskBgColor: #2F2F2F;
-    --inputTypeColor: #FFFAFF;
-    --addTaskButtonBgColor: #F64740;
-    --addTaskButtonColor: #FFFAFF;
-    --tasksContainerBgColor: #FFF8F0;
-    --tasksContainerBorderColor: #2F2F2F;
-    --taskBackgroundColor: #2F2F2F;
-    --taskColor: #FFFAFF;
+    --containerBgColor: #31393C;
+    --headerDivBgColor: #2176FF;
+    --inputTaskDivBgColor: #31393C;
+    --inputTaskBgColor: #FAF0CA;
+    --inputTaskTxtColor: #31393C;
+    --logoBgColor: #31393C;
+    --logoTxtColor: #FAF0CA;
+    --addTaskButtonBgColor: #FFC857;
+    --addTaskButtonTxtColor: #31393C;
+    --toggleDarkLightModeBgColor: #F78154;
+    --toggleDarkLightModeTxtColor: #31393C;
+    --tasksDivHeaderTxtColor: #FAF0CA;
+    --taskDivBgColor: #FFC857;
+    --taskTxtBgColor: #31393C;
+    --taskTxtColor: #FAF0CA;
+    --doneTaskButtonBgColor: #31393C;
+    --doneTaskButtonTxtColor: #00A676;
+    --deleteTaskButtonBgColor: #31393C;
+    --deleteTaskButtonTxtColor: #FC5130;
+    --editTaskButtonBgColor: #31393C;
+    --editTaskButtonTxtColor: #256EFF;
+}
+
+body {
+    background-color: var(--containerBgColor);
 }
 
 #container {
@@ -32,77 +41,137 @@ body {
     flex-direction: column;
 }
 
-header {
-    background-color: var(--headerBgColor);
-    color: var(--headerColor);
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    padding: 20px 40px;
-    width: 100vw;
-}
-
-#container-content {
-    background-color: var(--containerContentBgColor);
-}
-
-#add_task_container {
+#headerDiv {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 1vw;
-    background-color: var(--addTaskContainerBgColor);
-    border: 2px solid var(--addTaskContainerBorderColor);
-    width: 50vw;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 5vh;
+    width: 100vw;
+    background-color: var(--headerDivBgColor);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
 }
-#add_task_container > #input_task {
-    font-size: 1.2rem;
+#logo {
+    font-size: 1.8rem;
+    text-transform: uppercase;
     font-weight: 600;
-    background-color: var(--inputTaskBgColor);
-    color: var(--inputTypeColor);
+    background-color: var(--logoBgColor);
+    color: var(--logoTxtColor);
+    padding: 10px;
+    border-radius: 10px;
+}
+#addTaskDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: var(--inputTaskDivBgColor);
+    padding: 10px;
+    border-radius: 10px;
+}
+#addTask {
     border: none;
     outline: none;
-    padding: 10px 20px;
-    border-radius: 10px; 
-    width: 100vw;
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--inputTaskBgColor);
+    color: var(--inputTaskTxtColor);
 }
-#add_task_container > #input_task::placeholder {
+#addTask::placeholder {
+    color: var(--inputTaskTxtColor);
+    opacity: 0.7;
     text-transform: capitalize;
 }
-#add_task_container > #add_button {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    background-color: var(--addTaskButtonBgColor);
-    color: var(--addTaskButtonColor);
+#addTaskButton {
     border: none;
     outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--addTaskButtonBgColor);
+    cursor: pointer;
+    color: var(--addTaskButtonTxtColor);
     padding: 10px 20px;
     border-radius: 10px;
 }
-
-#tasks-container {
+#toggleDarkLightModeButton {
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--toggleDarkLightModeBgColor);
+    color: var(--toggleDarkLightModeTxtColor);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#tasksDivHeader {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--tasksDivHeaderTxtColor);
+    padding: 10px 20px;
+}
+#tasksParentDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--tasksContainerBgColor);
-    border: 2px solid var(--tasksContainerBorderColor);
-    padding: 20px;
-    margin-top: 5vh;
+    width: 100vw;
+    gap: 3vh;
+    padding: 5vh 0vh;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--taskDivBgColor);
+    width: 60%;
+    padding: 10px;
     border-radius: 10px;
 }
-
-.task {
-    background-color: var(--taskBackgroundColor);
-    color: var(--taskColor);
+.taskText {
+    width: 60%;
+    background-color: var(--taskTxtBgColor);
+    color: var(--taskTxtColor);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
+.taskButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.taskEditButton, .taskDeleteButton, .taskDoneButton {
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--addTaskButtonBgColor);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.taskEditButton {
+    background-color: var(--editTaskButtonBgColor);
+    color: var(--editTaskButtonTxtColor);
+}
+.taskDoneButton {
+    background-color: var(--doneTaskButtonBgColor);
+    color: var(--doneTaskButtonTxtColor);
+}
+.taskDeleteButton {
+    background-color: var(--deleteTaskButtonBgColor);
+    color: var(--deleteTaskButtonTxtColor);
 }
