@@ -41,6 +41,18 @@ window.addEventListener (
                 tasksParentDiv.appendChild(task);
                 form.reset();
 
+                taskEditButton.addEventListener (
+                    'click', function () {
+                        taskText.contentEditable = true;
+                        taskEditButton.textContent = "save";
+                    }
+                )
+                taskEditButton.addEventListener (
+                    'dblclick', function () {
+                        taskText.contentEditable = false;
+                        taskEditButton.textContent = "edit";
+                    }
+                )
                 taskDeleteButton.addEventListener (
                     'click', function () {
                         tasksParentDiv.removeChild(task);
