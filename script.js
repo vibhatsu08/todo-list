@@ -40,6 +40,12 @@ window.addEventListener (
                 task.appendChild(taskButtons);
                 tasksParentDiv.appendChild(task);
                 form.reset();
+
+                taskDeleteButton.addEventListener (
+                    'click', function () {
+                        tasksParentDiv.removeChild(task);
+                    }
+                )
             }
         )
     }
