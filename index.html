@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Todo List project</title>
 </head>
 <body>
     <div id="container">
         <div id="headerDiv">
             <div id="logo">todo list</div>
-            <div id="addTaskDiv">
+            <form id="addTaskDiv">
                 <input type="text" name="addTask" id="addTask" placeholder="add task">
                 <button id="addTaskButton">add task</button>
-            </div>
+            </form>
             <div id="toggleDarkLightModeDiv">
                 <button id="toggleDarkLightModeButton">toggle view</button>
             </div>
@@ -23,7 +23,7 @@
         <div id="tasksContentParentDiv">
             <div id="tasksDivHeader">your tasks</div>
             <div id="tasksParentDiv">
-                <div class="task">
+                <!-- <div class="task">
                     <div class="taskText">task test 1</div>
                     <div class="taskButtons">
                         <button class="taskEditButton">edit</button>
@@ -46,79 +46,7 @@
                         <button class="taskDoneButton">done</button>
                         <button class="taskDeleteButton">delete</button>
                     </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 4</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 5</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 6</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 7</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 8</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 9</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 10</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 11</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
-                <div class="task">
-                    <div class="taskText">task test 12</div>
-                    <div class="taskButtons">
-                        <button class="taskEditButton">edit</button>
-                        <button class="taskDoneButton">done</button>
-                        <button class="taskDeleteButton">delete</button>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
