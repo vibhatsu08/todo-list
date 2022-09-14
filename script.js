@@ -72,6 +72,8 @@ window.addEventListener (
                     // event listener for the task done button when clicked once.
                     taskDoneButton.addEventListener (
                         'click', function () {
+                            taskDoneButton.style.color = '#F67E7D';
+                            taskDoneButton.textContent = 'revert';
                             task.style.backgroundColor = '#00A676';
                         }
                     );
@@ -79,6 +81,8 @@ window.addEventListener (
                     // event listener for the task done button when clicked twice.
                     taskDoneButton.addEventListener (
                         'dblclick', function () {
+                            taskDoneButton.style.color = '#00A676';
+                            taskDoneButton.textContent = 'done';
                             task.style.backgroundColor = '#FFC857';
                         }
                     );
