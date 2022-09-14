@@ -1,4 +1,4 @@
-// global variables
+// global variables.
 const addTask = document.getElementById('addTask');
 const addTaskButton = document.getElementById('addTaskButton');
 const form = document.getElementById('addTaskDiv');
