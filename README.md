@@ -10,3 +10,4 @@ ProjectLog[3] - Working on the script for the project. </br>
 ProjectLog[4] - Completed implementing the intented purpose for the buttons, and added form validation to the script, to prevent the user from entering random spaces or data. </br>
 ProjectLog[5] - Completed the project for desktop version. </br>
 ProjectLog[6] - Working on rewriting the CSS code to remove the repeated code. </br>
+ProjectLog[7] - Completed the project, for desktop version and for other screen sizes, made it responsive. </br>
