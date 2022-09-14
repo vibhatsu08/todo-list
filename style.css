@@ -145,6 +145,9 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+.taskText:focus {
+    outline: none;
+}
 .taskButtons {
     display: flex;
     justify-content: center;
