@@ -44,13 +44,13 @@ window.addEventListener (
                 taskEditButton.addEventListener (
                     'click', function () {
                         taskText.contentEditable = true;
-                        taskEditButton.textContent = "save";
+                        taskEditButton.textContent = 'save';
                     }
                 )
                 taskEditButton.addEventListener (
                     'dblclick', function () {
                         taskText.contentEditable = false;
-                        taskEditButton.textContent = "edit";
+                        taskEditButton.textContent = 'edit';
                     }
                 )
                 taskDeleteButton.addEventListener (
