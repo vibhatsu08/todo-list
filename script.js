@@ -53,6 +53,16 @@ window.addEventListener (
                         taskEditButton.textContent = 'edit';
                     }
                 )
+                taskDoneButton.addEventListener (
+                    'click', function () {
+                        task.style.backgroundColor = '#00A676';
+                    }
+                )
+                taskDoneButton.addEventListener (
+                    'dblclick', function () {
+                        task.style.backgroundColor = '#FFC857';
+                    }
+                )
                 taskDeleteButton.addEventListener (
                     'click', function () {
                         tasksParentDiv.removeChild(task);
