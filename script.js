@@ -45,6 +45,7 @@ window.addEventListener (
                     'click', function () {
                         taskText.contentEditable = true;
                         taskEditButton.textContent = 'save';
+                        
                     }
                 )
                 taskEditButton.addEventListener (
