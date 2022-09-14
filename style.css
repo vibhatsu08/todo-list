@@ -34,137 +34,111 @@ body {
     background-color: var(--containerBgColor);
 }
 
-#container {
+#container, #headerDiv, #addTaskDiv, #tasksParentDiv, .task, .taskButtons {
     display: flex;
+}
+#container, #tasksParentDiv, .taskButtons {
     justify-content: center;
+}
+#headerDiv, #addTaskDiv, .task {
+    justify-content: space-between;
+}
+#container, #headerDiv, #addTaskDiv, #tasksParentDiv, .task, .taskButtons {
     align-items: center;
+}
+#container, #tasksParentDiv {
     flex-direction: column;
 }
-
-#headerDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#headerDiv, .task, .taskButtons {
     flex-direction: row;
+}
+#headerDiv, #tasksParentDiv {
     width: 100vw;
-    background-color: var(--headerDivBgColor);
+}
+#headerDiv, #addTaskButton, #toggleDarkLightModeButton, #tasksDivHeader, .taskEditButton, .taskDeleteButton, .taskDoneButton {
     padding: 10px 20px;
+}
+#headerDiv {
+    background-color: var(--headerDivBgColor);
     position: sticky;
     top: 0;
 }
+#logo, #addTaskButton, #toggleDarkLightModeButton, .taskEditButton, .taskDeleteButton, .taskDoneButton {
+    text-transform: uppercase;
+}
+#logo, #addTaskButton, #toggleDarkLightModeButton, #tasksDivHeader, .taskEditButton, .taskDeleteButton, .taskDoneButton{
+    font-weight: 600;
+}
+#logo, #addTaskDiv, #addTask, .task, .taskText {
+    padding: 10px;
+}
+#logo, #addTaskDiv, #addTask, #addTaskButton, #toggleDarkLightModeButton, .task, .taskText, .taskEditButton, .taskDeleteButton, .taskDoneButton {
+    border-radius: 10px;
+}
 #logo {
     font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 600;
     background-color: var(--logoBgColor);
     color: var(--logoTxtColor);
-    padding: 10px;
-    border-radius: 10px;
 }
 #addTaskDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 50%;
     background-color: var(--inputTaskDivBgColor);
-    padding: 10px;
-    border-radius: 10px;
 }
-#addTask {
+#addTask, #addTaskButton, #toggleDarkLightModeButton, .taskText:focus, .taskEditButton, .taskDeleteButton, .taskDoneButton {
     border: none;
     outline: none;
-    width: 60%;
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 10px;
+}
+#addTask {
     background-color: var(--inputTaskBgColor);
     color: var(--inputTaskTxtColor);
+}
+#addTask, .taskText, .task {
+    width: 60%;
+}
+#addTask, .taskText {
+    font-weight: 500;
+}
+#addTask, #addTaskButton, #toggleDarkLightModeButton, .taskText, .taskEditButton, .taskDeleteButton, .taskDoneButton {
+    font-size: 1.3rem;
 }
 #addTask::placeholder {
     color: var(--inputTaskTxtColor);
     opacity: 0.7;
+}
+#addTask::placeholder, #tasksDivHeader {
     text-transform: capitalize;
 }
 #addTaskButton {
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--addTaskButtonBgColor);
-    cursor: pointer;
     color: var(--addTaskButtonTxtColor);
-    padding: 10px 20px;
-    border-radius: 10px;
+}
+#addTaskButton, #toggleDarkLightModeButton, .taskEditButton, .taskDeleteButton, .taskDoneButton {
+    cursor: pointer;
 }
 #toggleDarkLightModeButton {
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--toggleDarkLightModeBgColor);
     color: var(--toggleDarkLightModeTxtColor);
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
 }
 #tasksDivHeader {
     font-size: 2rem;
-    font-weight: 600;
-    text-transform: capitalize;
     color: var(--tasksDivHeaderTxtColor);
-    padding: 10px 20px;
 }
 #tasksParentDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
     gap: 3vh;
     padding: 5vh 0vh;
 }
 .task {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
     background-color: var(--taskDivBgColor);
-    width: 60%;
-    padding: 10px;
-    border-radius: 10px;
 }
 .taskText {
-    width: 60%;
     background-color: var(--taskTxtBgColor);
     color: var(--taskTxtColor);
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 10px;
-}
-.taskText:focus {
-    outline: none;
 }
 .taskButtons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     gap: 10px;
 }
 .taskEditButton, .taskDeleteButton, .taskDoneButton {
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
     background-color: var(--addTaskButtonBgColor);
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
 }
 .taskEditButton {
     background-color: var(--editTaskButtonBgColor);
