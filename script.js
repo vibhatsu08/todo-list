@@ -43,7 +43,6 @@ window.addEventListener (
                     taskButtons.appendChild(taskDeleteButton);
                     task.appendChild(taskButtons);
                     tasksParentDiv.appendChild(task);
-                    form.reset();
 
                     taskEditButton.addEventListener (
                         'click', function () {
@@ -74,6 +73,8 @@ window.addEventListener (
                             tasksParentDiv.removeChild(task);
                         }
                     );
+                    
+                    form.reset();
                 }
             }
         )
