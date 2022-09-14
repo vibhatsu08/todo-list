@@ -44,31 +44,32 @@ window.addEventListener (
                 taskEditButton.addEventListener (
                     'click', function () {
                         taskText.contentEditable = true;
+                        taskText.style.color = '#FC5130';
                         taskEditButton.textContent = 'save';
-                        
                     }
-                )
+                );
                 taskEditButton.addEventListener (
                     'dblclick', function () {
                         taskText.contentEditable = false;
+                        taskText.style.color = '#FAF0CA';
                         taskEditButton.textContent = 'edit';
                     }
-                )
+                );
                 taskDoneButton.addEventListener (
                     'click', function () {
                         task.style.backgroundColor = '#00A676';
                     }
-                )
+                );
                 taskDoneButton.addEventListener (
                     'dblclick', function () {
                         task.style.backgroundColor = '#FFC857';
                     }
-                )
+                );
                 taskDeleteButton.addEventListener (
                     'click', function () {
                         tasksParentDiv.removeChild(task);
                     }
-                )
+                );
             }
         )
     }
