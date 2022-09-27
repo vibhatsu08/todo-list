@@ -12,3 +12,4 @@ ProjectLog[5] - Completed the project for desktop version. </br>
 ProjectLog[6] - Working on rewriting the CSS code to remove the repeated code. </br>
 ProjectLog[7] - Completed the project, for desktop version and for other screen sizes, made it responsive. </br>
 ProjectLog[8] - Removed the toggle view button. </br>
+<img width="1440" alt="Screenshot 2022-09-27 at 13 06 51" src="https://user-images.githubusercontent.com/37664832/192463544-3cee38a1-e4d9-4567-8fbc-089e5fb2a485.png">
