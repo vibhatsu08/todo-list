@@ -15,8 +15,6 @@
     --logoTxtColor: #FAF0CA;
     --addTaskButtonBgColor: #FFC857;
     --addTaskButtonTxtColor: #31393C;
-    --toggleDarkLightModeBgColor: #F78154;
-    --toggleDarkLightModeTxtColor: #31393C;
     --tasksDivHeaderTxtColor: #FAF0CA;
     --taskDivBgColor: #FFC857;
     --taskTxtBgColor: #31393C;
@@ -92,18 +90,6 @@ body {
     background-color: var(--addTaskButtonBgColor);
     cursor: pointer;
     color: var(--addTaskButtonTxtColor);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-#toggleDarkLightModeButton {
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: var(--toggleDarkLightModeBgColor);
-    color: var(--toggleDarkLightModeTxtColor);
-    cursor: pointer;
     padding: 10px 20px;
     border-radius: 10px;
 }
